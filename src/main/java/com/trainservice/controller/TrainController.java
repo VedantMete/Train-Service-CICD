@@ -23,10 +23,10 @@ public class TrainController {
         return trainService.addTrain(train);
     }
 
-   // @GetMapping("/{trainId}")
-   // public Train getTrainById(@PathVariable String trainId) {
-    //    return trainService.getTrainById(trainId);
-   // }
+    @GetMapping("/{trainId}")
+    public Train getTrainById(@PathVariable String trainId) {
+        return trainService.getTrainById(trainId);
+   }
 
     @GetMapping
     public List<Train> getAllTrains() {
